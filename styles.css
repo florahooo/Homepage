@@ -1,0 +1,252 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face { font-family: noir; src: url(/fonts/NoirStd-SemiBold.ttf) } 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face { font-family: montbold; src: url(/fonts/Montserrat-Bold.ttf) } 
+@font-face { font-family: pt; src: url(/fonts/PTSans-Regular.ttf) } 
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #080708;
+}
+  
+
+  /* GLOBAL */
+.container {
+    width: 100%; /*If you want it to be responsive NO PIXELS*/
+    margin:auto; 
+    overflow: hidden;
+}
+
+/* header */ 
+header {
+    background: #080708;
+    color:white; 
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a {
+    color:white; 
+    text-decoration: none; 
+    font-size:18px; 
+}
+
+header li {
+    float:left; 
+    display: inline; 
+    padding: 0 20px 0 20px;
+    font-family:'Montserrat', sans-serif;  
+}
+
+header #branding {
+    float:left;  
+}
+
+header #branding h1 {
+    margin:0; 
+    font-family: noir;
+}
+
+header nav {
+    float:right;
+    margin-top: 10px;
+}
+
+header .current a {
+    color: #FDCA40;
+    font-family: montbold;
+}
+header .highlight {
+  color: #DF2935;
+}
+
+header a:hover{
+    color:#cccccc; 
+    font-family: montbold;
+    text-decoration: none;
+}
+
+/* Hero Image  */ 
+  .hero-image {
+    background-image: url(/img/Hero.png);
+    height: 100vh;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+  }
+  /* Hero text */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text {
+    font-family:'Montserrat', sans-serif;
+  }
+  .hero-text h1 {
+    font-size: 17vh;
+    font-family: noir;
+    background-image: linear-gradient(#FDCA40, #F3943C);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+
+  .hero-text h3 {
+    font-family: montbold;
+    font-size: 7vh;
+  }
+
+  .hero-text p {
+    font-size: 3vh;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text button {
+    font-family: montbold;
+    font-size: 24px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 15px 50px;
+    color: white;
+    background-color:#3772FF;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* Button */ 
+  .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* Footer */ 
+  footer {
+    font-family: pt;
+    padding:30px; 
+    color:#ffffff; 
+    background-color: #3772FF;
+    text-align: center;
+}
+
+/* About Me */ 
+
+.banner {
+  background-image: url(/img/StarBanner.png);
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner h1 {
+    font-size: 10vh;
+    font-family: noir;
+    background-image: linear-gradient(#FDCA40, #F3943C);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+  margin: auto;
+  width: 45%;
+  color: white;
+  margin-bottom:10%;
+}
+
+.text h3 {
+  font-family: noir;
+  color: #DF2935
+}
+
+.text p {
+  line-height: 35px;
+  font-family: pt;
+  font-size: 21px;
+}
+
+/* Learning */ 
+
+#learn {
+  top:65%;
+  font-size: 8vh;
+}
+#boxes {
+  padding-top: 50px;
+  transform: translate(50px);
+  margin-bottom: 50px;
+  margin:auto;
+}
+
+#boxes .box {
+  float:left; 
+  text-align:center; 
+  width:30%;
+  padding:30px; 
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+.box h3 {
+  color: #FDCA40;
+  font-family: noir;
+  padding-top: 10px;
+}
+
+.box p {
+  color: #ffffff;
+  font-family: pt;
+}
+
+#btm-box {
+  margin-bottom: 100px;
+}
+
+/* The Future */
+#highlight {
+  color: #FDCA40;
+}
+
